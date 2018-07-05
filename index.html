@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="Fun.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+
+        <div class="jumbotron">
+                <h1 class="display-4">This is an internet 8 Ball!</h1>
+                <p class="lead">By finding yourself on this site, you're are subject to the internet 8 ball's omnipotent <span class = "colors">clairevoyance.</span></p>
+                <div class="cute">
+                <div id ="first"><p id ="firstP"></p></div>
+                <br>
+
+              </div>
+                <a href="#" id="shit">8-Ball</a>
+                </p>
+              </div>
+              <div class="wait">Call to me and i will answer you and tell you great and hidden truths that you have not known.  - Jeremiah 33:3</div>
+<script>
+
+
+let a = 6 + 9;
+let b = Math.floor(Math.random() * 100);
+
+function myFunction(){
+let randomNumber = Math.floor(Math.random() * 8);
+let eightBall = '';
+switch (randomNumber) {
+  case 0:
+  eightBall = "It <br>  is <br> certain"
+  break;
+  case 1:
+  eightBall = "It is decidely so"
+  break;
+  case 2:
+  eightBall = "Reply hazy try again"
+  break;
+  case 3:
+  eightBall = "Cannot predict now"
+  break;
+  case 4:
+  eightBall = "Do not count on it"
+  break;
+  case 5:
+  eightBall = "My sources say no"
+  break;
+  case 6:
+  eightBall = "Outlook not so good"
+  break;
+  case 7:
+  eightBall = "Signs point to yes"
+  break;
+}
+    $("#firstP").html(eightBall);
+    
+}
+$("#shit").click(function() {
+  $(".cute").hide();
+  myFunction()
+  $(".cute").fadeIn(2000);
+  $(".display-4").css({color: "rgba(31, 31, 77, 0.979)", fontFamily: "monospace"})
+});
+
+
+
+myFunction();
+</script>
+</body>
+</html>
